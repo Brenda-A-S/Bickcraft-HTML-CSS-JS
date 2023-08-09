@@ -1,5 +1,5 @@
 .header-bg {
-    background-color: #000;
+    background-color: var(--cor-12);
 }
 
 .header {
@@ -18,11 +18,9 @@
 }
 
 .header-menu a {
+    position: relative;
     display: inline-block;
     padding: 16px 0px;
-    color: #fff;
-    font-size: 18px;
-    position: relative;
 } 
 
 
@@ -32,7 +30,7 @@
     position: absolute;
     height: 2px;
     width: 0px;
-    background: #fff;
+    background: var(--cor-0);
     transition: .3s;
 }
 
@@ -45,12 +43,12 @@
         gap: 20px;
     }
     .header-menu a {
-        background-color: #111;
+        background-color: var(--cor-11);
         padding: 12px 16px;
         border-radius: 4px;
     }     
     .header-menu a:hover {
-        background-color: #2e2e2e;
+        background-color: var(--cor-10);
     } 
 }
 
@@ -60,7 +58,6 @@
     }
     .header-menu a {
         padding: 8px 12px;
-        font-size: 14px;
     }     
     .header-menu a:after {
         display: none;
