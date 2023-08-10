@@ -1,7 +1,17 @@
-.container {
+.container-1200 {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-1440 {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .button {
