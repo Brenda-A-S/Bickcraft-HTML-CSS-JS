@@ -28,3 +28,13 @@ img {
 img[src$='.jpg'] {
     border-radius: 4px;
 }
+
+::-webkit-scrollbar {
+    width: 11px;
+    background-color: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border: 1px solid #2e2e2e;
+}
