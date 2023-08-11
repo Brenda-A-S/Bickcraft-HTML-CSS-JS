@@ -29,12 +29,12 @@ img[src$='.jpg'] {
     border-radius: 4px;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 11px;
     background-color: #2e2e2e;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #111;
     border: 1px solid #2e2e2e;
 }
