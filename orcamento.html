@@ -6,8 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Bicicletas elétricas Bikcraft, solicite um orçamento com a nossa equipe.">
+    <meta name="description" content="Bicicletas elétricas Bikcraft, solicite um orçamento com a nossa equipe.">
 
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/img/icones/eletrica.svg" type="svg">
@@ -43,6 +42,100 @@
                 <h1 class="font-1-xxl cor-0">solicite um orçamento<span>.</span></h1>
             </div>
         </div>
+
+        <form class="orcamento container-1200" action="./orcamento.html">
+            <div class="orcamento-produto">
+                <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
+
+                <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+                <label for="bikcraft">Bikcraft</label>
+
+                <input type="radio" name="tipo" value="seguro" id="seguro">
+                <label for="seguro">Seguro</label>
+
+                <div class="orcamento-conteudo" id="orcamento-bikcraft">
+                    <h2 class="font-1-xs cor-5">Escolha a sua</h2>
+
+                    <input type="radio" name="produto" value="magic" id="magic">
+                    <label for="magic">Magic Might <span>R$ 2499</span></label>
+
+                    <input type="radio" name="produto" value="nebula" id="nebula">
+                    <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
+
+                    <input type="radio" name="produto" value="nimbus" id="nimbus">
+                    <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
+                </div>
+
+                <div class="orcamento-conteudo" id="orcamento-seguro">
+                    <h2 class="font-1-xs cor-5">Escolha o plano</h2>
+
+                    <input type="radio" name="produto" value="prata" id="prata">
+                    <label for="prata">Prata Cosmic <span>R$ 199</span></label>
+
+                    <input type="radio" name="produto" value="ouro" id="ouro">
+                    <label for="ouro">Ouro <span>R$ 299</span></label>
+                </div>
+            </div>
+
+            <div class="orcamento-dados form">
+                <h2 class="font-1-xs cor-9 col-2">Dados pessoais</h2>
+
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" />
+                </div>
+
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" />
+                </div>
+
+                <div class="col-2">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" />
+                </div>
+
+                <div class="col-2">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com" />
+                </div>
+
+                <h2 class="font-1-xs cor-9 col-2">Entrega</h2>
+
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="00000-000" />
+                </div>
+
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero" />
+                </div>
+
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" />
+                </div>
+
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" />
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" />
+                </div>
+
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado" />
+                </div>
+
+                <button class="botao col-2">Solicitar orçamento</button>
+            </div>
+        </form>
+
     </main>
 
     <footer class="footer-bg">
@@ -82,7 +175,7 @@
                 </nav>
             </div>
 
-            <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>            
+            <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
 </body>
