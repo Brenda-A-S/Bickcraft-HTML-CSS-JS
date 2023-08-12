@@ -6,7 +6,7 @@
 
 .form label {
     display: block;
-    font: 600 1rem/1.5 "Poppins", sans-serif;
+    font: 400 1rem/1.5 "Poppins", sans-serif;
     margin-bottom: 4px;
 }
 
@@ -23,6 +23,7 @@
 
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
+.form input[type="checkbox"]:focus,
 .form textarea:focus {
     outline: none;
     border-color: var(--cor-p1);
@@ -32,6 +33,15 @@
 
 .form .col-2 {
     grid-column: span 2;
+}
+
+.form input[type="checkbox"]{
+    color: var(--cor-p1);
+    accent-color: var(--cor-p1);
+}
+
+.form input[type="checkbox"] + label {
+    display: initial;
 }
 
 @media (max-width: 600px) {

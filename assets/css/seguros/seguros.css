@@ -1,5 +1,5 @@
 .seguros-bg {
-    background-color: var(--cor-11);
+    background: var(--cor-11) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 20px;
 }
 
 .seguros {
@@ -42,7 +42,7 @@
     margin-bottom: 32px;
 }
 
-.seguros-item li + li {
+.seguros-item li+li {
     margin-top: 20px;
 }
 
@@ -67,8 +67,11 @@
 }
 
 @media (max-width: 800px) {
-    .seguros {
-      grid-template-columns: 1fr;
+    .seguros-bg {
+        background: var(--cor-11);
     }
-  }
-  
+
+    .seguros {
+        grid-template-columns: 1fr;
+    }
+}
