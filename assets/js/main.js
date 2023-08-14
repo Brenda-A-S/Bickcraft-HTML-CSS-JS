@@ -1,6 +1,6 @@
 import { handleToTop } from './handleToTop.js';
 import { toggleVisibility } from './toggleVisibility.js';
-import { toggleImg } from './toggleImg.js';
+import { toggleImg, toggleImgClick } from './toggleImg.js';
 import { toggleLink } from './toggleLink.js';
 import { handleSelect } from './handleSelect.js';
 
@@ -12,9 +12,10 @@ window.addEventListener("scroll", (event)=> {
 // ao evento de click no botao ele chama a função de voltar ao topo
 btntop.addEventListener("click", handleToTop);
 
+const galeryContainer = document.querySelector('.bicicleta-imgs');
 const galery = document.querySelectorAll('.bicicleta-imgs img');
 // chama a função que alterna a imagem da galeria
-galery.forEach(toggleImg);
+galery.forEach((img) => toggleImg(img, galeryContainer));
 
 const menu = document.querySelectorAll('nav a');
 // acessa minha lista de links de navegação e chama a função que alterna estilo ativo
