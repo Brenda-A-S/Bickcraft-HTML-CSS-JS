@@ -1,14 +1,16 @@
-// const currentImg = document.querySelector()
+const galeryContainer = document.querySelector('.bicicleta-imgs');
 
-function toggleClick(event) {
-    const clicked = event.currentTarget
-    const currentImg = clicked.p
-    console.log(currentImg)
-    // clicked.src
+// const currentImg = document.querySelector()
+function toggleImgClick(event) {
+    const img = event.currentTarget
+    const media = matchMedia('(min-width:920px)').matches
+    if(media){
+        galeryContainer.prepend(img)
+    }
 }
 
-function toggleImg(imagem) {
-    imagem.addEventListener('click', toggleClick)
+function toggleImg(img) {
+    img.addEventListener('click', toggleImgClick)
 }
 
 export { toggleImg };

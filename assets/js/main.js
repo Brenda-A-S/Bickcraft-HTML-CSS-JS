@@ -10,16 +10,15 @@ window.addEventListener("scroll", (event)=> {
     toggleVisibility(btntop)
 })
 // ao evento de click no botao ele chama a função de voltar ao topo
-btntop.addEventListener("click", handleToTop)
+btntop.addEventListener("click", handleToTop);
 
+const galery = document.querySelectorAll('.bicicleta-imgs img');
+// chama a função que alterna a imagem da galeria
+galery.forEach(toggleImg);
 
-// 
-const imgs = document.querySelectorAll('.bicicleta-imgs img')
-imgs.forEach(toggleImg)
-
-
-const menu = document.querySelectorAll('nav a')
+const menu = document.querySelectorAll('nav a');
 // acessa minha lista de links de navegação e chama a função que alterna estilo ativo
 menu.forEach(toggleLink);
 
-handleSelect()
+// chama a função que seleciona o produto automaticamente
+handleSelect();

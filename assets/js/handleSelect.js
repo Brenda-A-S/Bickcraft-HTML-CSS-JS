@@ -1,3 +1,4 @@
+// seleciona o produto automaticamente com base nos parametros da url
 function handleSelect() {
     const params = new URLSearchParams(location.search)
     
