@@ -4,13 +4,13 @@ import { handleImgClick } from './handleImgClick.js';
 import { toggleLink } from './toggleLink.js';
 import { toggleActive } from './toggleActive.js';
 import { autoSelectProduct } from './autoSelectProduct.js';
-
+import './plugins/simple-anime.js';
 
 // ALTERNAR VISIBILIDADE COM O SCROLL
 const btntop = document.querySelector('a.top')
 // ao evento de scroll ele chama a função que altera visibilidade do botao
 window.addEventListener("scroll", (event) => {
-    toggleVisibility(btntop, 'visible')
+    toggleVisibility(btntop, 'visivel')
 })
 
 
@@ -41,3 +41,7 @@ autoSelectProduct();
 const questions = document.querySelectorAll('.perguntas button')
 // chama a função para alternar o display com o click
 questions.forEach(toggleActive)
+
+if(window.SimpleAnime){
+    new SimpleAnime();
+}
