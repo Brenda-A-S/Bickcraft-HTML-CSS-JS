@@ -1,5 +1,5 @@
 // seleciona o produto automaticamente com base nos parametros da url
-function handleSelect() {
+function autoSelectProduct() {
     const params = new URLSearchParams(location.search)
     
     function selectItem(item) {
@@ -12,4 +12,4 @@ function handleSelect() {
     params.forEach(selectItem)    
 }
 
-export { handleSelect };
+export { autoSelectProduct };

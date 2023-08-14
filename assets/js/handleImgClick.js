@@ -1,16 +1,16 @@
 // const currentImg = document.querySelector()
-function toggleImgClick(event, element) {
+function addImgClickEventListener(event, element) {
     const img = event.currentTarget
     const media = matchMedia('(min-width:920px)').matches
-    if(media){
+    if (media) {
         element.prepend(img)
     }
 }
 
-function toggleImg(img, element) {
+function handleImgClick(img, element) {
     img.addEventListener('click', (event) => {
-        toggleImgClick(event, element)
+        addImgClickEventListener(event, element)
     })
 }
 
-export { toggleImg, toggleImgClick };
+export { handleImgClick };
