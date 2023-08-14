@@ -2,7 +2,7 @@
 
 function toggleClick(event) {
     const clicked = event.currentTarget
-    const currentImg = clicked -1
+    const currentImg = clicked.p
     console.log(currentImg)
     // clicked.src
 }
