@@ -70,3 +70,4 @@ firebase.json
 *.php
 PHPMailer
 public/
+.gitignore
